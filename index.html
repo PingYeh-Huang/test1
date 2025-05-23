@@ -16,6 +16,19 @@
             <label for="catName">Cat Name</label>
             <input type="text" id="catName" name="catName" required>
 
+            <label for="catAge">Cat Age (years)</label>
+            <input type="number" id="catAge" name="catAge" min="0" step="0.1" required>
+
+            <label for="catWeight">Cat Weight (kg)</label>
+            <input type="number" id="catWeight" name="catWeight" min="0" step="0.1" required>
+
+            <label for="hairLength">Hair Length</label>
+            <select id="hairLength" name="hairLength" required>
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" required>
 
@@ -34,6 +47,7 @@
 
             <button type="submit">Book Appointment</button>
         </form>
+        <div id="aiStatus"></div>
         <p id="successMessage" class="hidden">Thank you! Your appointment has been submitted.</p>
     </div>
     <script src="script.js"></script>
