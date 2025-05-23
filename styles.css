@@ -38,3 +38,11 @@ button {
 .hidden {
     display: none;
 }
+
+#aiStatus {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffe0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
