@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Grooming Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cat Grooming Appointment</h1>
+        <form id="appointmentForm">
+            <label for="ownerName">Owner Name</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="catName">Cat Name</label>
+            <input type="text" id="catName" name="catName" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Service Type</label>
+            <select id="service" name="service" required>
+                <option value="bath">Bath</option>
+                <option value="nail">Nail Trim</option>
+                <option value="full">Full Grooming</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <p id="successMessage" class="hidden">Thank you! Your appointment has been submitted.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
